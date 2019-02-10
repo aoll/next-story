@@ -40,6 +40,7 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
+    "lodash": "^4.17.11",
     "react-docgen": "^3.0.0",
     "react-storybook-addon-chapters": "^3.0.3",
     "react-test-renderer": "^16.7.0",

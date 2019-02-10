@@ -8,7 +8,7 @@ const storieTemplate = require('./template/storieWithChildren.template');
 
 // console.log(storieTemplate);
 
-const name = 'Button';
+const name = 'Card';
 const path = `./${name}.js`;
 
 const data = `
