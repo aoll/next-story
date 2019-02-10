@@ -1,0 +1,56 @@
+{
+  "name": "nextjs",
+  "version": "3.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
+    "jss": "latest",
+    "next": "latest",
+    "package.json": "^2.0.1",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-jss": "^8.1.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@storybook/addon-actions": "4.0.12",
+    "@storybook/addon-links": "4.0.12",
+    "@storybook/addon-storyshots": "4.0.12",
+    "@storybook/addons": "4.0.12",
+    "@storybook/react": "4.0.12",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "8.0.4",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "react-test-renderer": "^16.7.0",
+    "storybook-addon-material-ui": "0.9.0-alpha.17"
+  },
+  "devDependenciesOld": {
+    "@babel/core": "^7.0.0",
+    "@storybook/addon-a11y": "^4.1.11",
+    "@storybook/addon-actions": "4.0.12",
+    "@storybook/addon-backgrounds": "^4.1.11",
+    "@storybook/addon-console": "^1.1.0",
+    "@storybook/addon-knobs": "^4.1.11",
+    "@storybook/addon-links": "4.0.12",
+    "@storybook/addon-notes": "^4.1.11",
+    "@storybook/addon-storysource": "^4.1.11",
+    "@storybook/addon-viewport": "^4.1.11",
+    "@storybook/addons": "4.0.12",
+    "@storybook/react": "4.0.12",
+    "babel-loader": "8.0.4",
+    "storybook-addon-jsx": "^6.0.0",
+    "storybook-addon-material-ui": "0.9.0-alpha.17"
+  }
+}
