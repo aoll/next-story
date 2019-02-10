@@ -18,8 +18,10 @@ const {name} = (props) => {
 
 {name}.defaultProps = {
   {defaultProps}
-}
+};
 
 export default {name};`;
 
 exports.default = template;
+
+// module.exports = name;
