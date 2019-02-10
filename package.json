@@ -24,6 +24,7 @@
     "@storybook/addon-actions": "4.0.12",
     "@storybook/addon-backgrounds": "^4.1.11",
     "@storybook/addon-console": "^1.1.0",
+    "@storybook/addon-info": "^4.1.11",
     "@storybook/addon-knobs": "^4.1.11",
     "@storybook/addon-links": "4.0.12",
     "@storybook/addon-notes": "^4.1.11",
@@ -39,6 +40,8 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
+    "react-docgen": "^3.0.0",
+    "react-storybook-addon-chapters": "^3.0.3",
     "react-test-renderer": "^16.7.0",
     "storybook-addon-jsx": "^6.0.0",
     "storybook-addon-material-ui": "^0.9.0-alpha.17"

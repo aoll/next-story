@@ -13,6 +13,9 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
+  /**
+   * The content of the button.
+   */
   children: PropTypes.node.isRequired,
 };
 

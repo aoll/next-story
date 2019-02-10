@@ -2,14 +2,24 @@
 import { configure, addDecorator, setAddon } from '@storybook/react';
 import { muiTheme } from 'storybook-addon-material-ui';
 import { withKnobs } from '@storybook/addon-knobs';
-import { withNotes } from '@storybook/addon-notes';
+import { withNotes } from '@storybook/addon-notes'; //to remove
 import { withConsole } from '@storybook/addon-console';
 import { withBackgrounds } from '@storybook/addon-backgrounds';
-import JSXAddon from 'storybook-addon-jsx';
+import JSXAddon from 'storybook-addon-jsx';// to remove
+import chaptersAddon from 'react-storybook-addon-chapters';
+import { withInfo } from '@storybook/addon-info';
 
 // import { checkA11y, configureA11y } from '@storybook/addon-a11y'; broke with the last version, have to wait
 
 const req = require.context('../components', true, /stories\.js$/);
+
+/**
+ * WARNING:  It is important to declare this decorator as the first decorator, otherwise it won't work well.
+ * [https description]
+ * https://github.com/storybooks/storybook/tree/master/addons/info
+ * @type {[type]}
+ */
+addDecorator(withInfo);
 
 /**
  * [addDecorator description]
@@ -60,6 +70,13 @@ addDecorator(
  * @param {[type]} JSXAddon [description]
  */
 setAddon(JSXAddon);
+
+/**
+ * [setAddon description]
+ * https://github.com/Checkfront/react-storybook-addon-chapters
+ * @param {[type]} chaptersAddon [description]
+ */
+setAddon(chaptersAddon);
 
 /**
  * [addDecorator description]
