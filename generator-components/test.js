@@ -49,7 +49,7 @@ for (let i = 0; i < keys.length; i += 1) {
   const key = keys[i];
   const prop = props[key];
   const entry = `
-  /*
+  /**
   * ${prop.description.replace(/\n/g, '\n  * ')}
   */
   ${key}: PropTypes.${prop.type.name === 'enum' ? `oneOf([${prop.type.value.map(e => e.value)}])` : prop.type.name}${prop.required ? '.isRequired' : ''},
@@ -59,7 +59,7 @@ for (let i = 0; i < keys.length; i += 1) {
     listPropTypes.push(entry);
   }
 
-  if (!prop.required) {
+  if (!prop.required && key !== 'component') {
     listDefaultProps.push(`${key}: ${_get(prop, 'defaultValue.value')}`);
   }
 
@@ -78,23 +78,35 @@ for (let i = 0; i < keys.length; i += 1) {
 const componentTemplateHydrated = componentTemplate
   .replace(/{name}/g, name)
   .replace('{propTypes}', listPropTypes.join('\n  '))
-  .replace('{defaultProps}', listDefaultProps.join('\n  '));
+  .replace('{defaultProps}', listDefaultProps.join(',\n  '));
 
 const storieTemplateHydrated = storieTemplate
   .replace(/{name}/g, name)
   .replace('{props}', listProps.join('\n      '));
 
-console.log(storieTemplateHydrated);
+// console.log(storieTemplateHydrated);
 // console.log(componentTemplateHydrated);
 // console.log(listProps);
 // console.log(template);
 
-// const pathToWrite = `./output/${name}/index.js`
-// // write to a new file named 2pac.txt
-// fs.writeFile(pathToWrite, componentTemplateHydrated, (err) => {
-//   // throws an error, you could also catch it here
-//   if (err) throw err;
-//
-//   // success case, the file was saved
-//   console.log('Component saved!');
-// });
+const dirPath = `./output/${name}`;
+fs.mkdirSync(dirPath);
+
+const pathToWrite = `./output/${name}/index.js`;
+// write to a new file named 2pac.txt
+fs.writeFile(pathToWrite, componentTemplateHydrated, (err) => {
+  // throws an error, you could also catch it here
+  if (err) throw err;
+
+  // success case, the file was saved
+  console.log('Component saved!');
+});
+const pathToWriteStorie = `./output/${name}/index.stories.js`;
+// write to a new file named 2pac.txt
+fs.writeFile(pathToWriteStorie, storieTemplateHydrated, (err) => {
+  // throws an error, you could also catch it here
+  if (err) throw err;
+
+  // success case, the file was saved
+  console.log('Storie saved!');
+});
