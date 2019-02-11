@@ -20,4 +20,4 @@ storiesOf('atoms/StepIcon', module)
     info: {
 
     },
-  })
+  });

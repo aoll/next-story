@@ -9,13 +9,9 @@ storiesOf('atoms/MobileStepper', module)
   .add('default', () => (
     <MobileStepper
       activeStep={text('activeStep', 0)}
-      backButton={text('backButton', undefined)}
-      className={text('className', undefined)}
-      LinearProgressProps={text('LinearProgressProps', undefined)}
-      nextButton={text('nextButton', undefined)}
-      position={select('position', ['bottom','top','static'] ,'bottom')}
+      position={select('position', ['bottom', 'top', 'static'], 'bottom')}
       steps={text('steps', undefined)}
-      variant={select('variant', ['text','dots','progress'] ,'dots')}
+      variant={select('variant', ['text', 'dots', 'progress'], 'dots')}
     >
       {text('children', 'Test')}
     </MobileStepper>
@@ -24,4 +20,4 @@ storiesOf('atoms/MobileStepper', module)
     info: {
 
     },
-  })
+  });

@@ -13,43 +13,18 @@ const MenuItem = (props) => {
 };
 
 MenuItem.propTypes = {
-  
-    /**
-    * Menu item contents.
-    */
-    children: PropTypes.node,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * The component used for the root node.
-  * Either a string to use a DOM element or a component.
-    */
-    component: PropTypes.element,
-    
-  
-    /**
-    * If `true`, the left and right padding is removed.
-    */
-    disableGutters: PropTypes.bool,
-    
-  
-    /**
-    * @ignore
-    */
-    role: PropTypes.string,
-    
-  
-    /**
-    * @ignore
-    */
-    selected: PropTypes.bool,
-    
+  /**
+   * If `true`, the left and right padding is removed.
+   */
+  disableGutters: PropTypes.bool,
+  /**
+   * @ignore
+   */
+  role: PropTypes.string,
+  /**
+   * @ignore
+   */
+  selected: PropTypes.bool,
 };
 
 MenuItem.defaultProps = {

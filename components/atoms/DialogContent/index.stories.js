@@ -8,7 +8,7 @@ import { DialogContent } from '../..';
 storiesOf('atoms/DialogContent', module)
   .add('default', () => (
     <DialogContent
-      className={text('className', undefined)}
+      
     >
       {text('children', 'Test')}
     </DialogContent>
@@ -17,4 +17,4 @@ storiesOf('atoms/DialogContent', module)
     info: {
 
     },
-  })
+  });

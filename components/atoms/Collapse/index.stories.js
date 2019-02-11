@@ -8,15 +8,8 @@ import { Collapse } from '../..';
 storiesOf('atoms/Collapse', module)
   .add('default', () => (
     <Collapse
-      className={text('className', undefined)}
       collapsedHeight={text('collapsedHeight', '0px')}
-      in={boolean('in', undefined)}
-      onEnter={text('onEnter', undefined)}
-      onEntered={text('onEntered', undefined)}
-      onEntering={text('onEntering', undefined)}
-      onExit={text('onExit', undefined)}
-      onExiting={text('onExiting', undefined)}
-      style={text('style', undefined)}
+      in={boolean('in', false)}
       theme={text('theme', undefined)}
     >
       {text('children', 'Test')}
@@ -26,4 +19,4 @@ storiesOf('atoms/Collapse', module)
     info: {
 
     },
-  })
+  });

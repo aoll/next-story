@@ -8,7 +8,7 @@ import { TableBody } from '../..';
 storiesOf('atoms/TableBody', module)
   .add('default', () => (
     <TableBody
-      className={text('className', undefined)}
+      
     >
       {text('children', 'Test')}
     </TableBody>
@@ -17,4 +17,4 @@ storiesOf('atoms/TableBody', module)
     info: {
 
     },
-  })
+  });

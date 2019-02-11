@@ -8,7 +8,7 @@ import { Portal } from '../..';
 storiesOf('atoms/Portal', module)
   .add('default', () => (
     <Portal
-      disablePortal={text('disablePortal', false)}
+      
     >
       {text('children', 'Test')}
     </Portal>
@@ -17,4 +17,4 @@ storiesOf('atoms/Portal', module)
     info: {
 
     },
-  })
+  });

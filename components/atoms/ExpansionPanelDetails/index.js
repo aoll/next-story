@@ -13,18 +13,10 @@ const ExpansionPanelDetails = (props) => {
 };
 
 ExpansionPanelDetails.propTypes = {
-  
-    /**
-    * The content of the expansion panel details.
-    */
-    children: PropTypes.node.isRequired,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
+  /**
+   * The content of the expansion panel details.
+   */
+  children: PropTypes.node.isRequired,
 };
 
 ExpansionPanelDetails.defaultProps = {

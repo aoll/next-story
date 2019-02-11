@@ -13,18 +13,10 @@ const ExpansionPanelActions = (props) => {
 };
 
 ExpansionPanelActions.propTypes = {
-  
-    /**
-    * The content of the component.
-    */
-    children: PropTypes.node.isRequired,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
+  /**
+   * The content of the component.
+   */
+  children: PropTypes.node.isRequired,
 };
 
 ExpansionPanelActions.defaultProps = {

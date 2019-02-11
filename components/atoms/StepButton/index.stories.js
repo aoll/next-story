@@ -8,15 +8,12 @@ import { StepButton } from '../..';
 storiesOf('atoms/StepButton', module)
   .add('default', () => (
     <StepButton
-      active={boolean('active', undefined)}
-      alternativeLabel={boolean('alternativeLabel', undefined)}
-      className={text('className', undefined)}
-      completed={boolean('completed', undefined)}
-      disabled={boolean('disabled', undefined)}
-      icon={text('icon', undefined)}
-      last={boolean('last', undefined)}
-      optional={text('optional', undefined)}
-      orientation={select('orientation', ['horizontal','vertical'] ,undefined)}
+      active={boolean('active', false)}
+      alternativeLabel={boolean('alternativeLabel', false)}
+      completed={boolean('completed', false)}
+      disabled={boolean('disabled', false)}
+      last={boolean('last', false)}
+      orientation={select('orientation', ['horizontal', 'vertical'], undefined)}
     >
       {text('children', 'Test')}
     </StepButton>
@@ -25,4 +22,4 @@ storiesOf('atoms/StepButton', module)
     info: {
 
     },
-  })
+  });

@@ -8,7 +8,6 @@ import { CardActionArea } from '../..';
 storiesOf('atoms/CardActionArea', module)
   .add('default', () => (
     <CardActionArea
-      className={text('className', undefined)}
       focusVisibleClassName={text('focusVisibleClassName', undefined)}
     >
       {text('children', 'Test')}
@@ -18,4 +17,4 @@ storiesOf('atoms/CardActionArea', module)
     info: {
 
     },
-  })
+  });

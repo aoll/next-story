@@ -17,4 +17,4 @@ storiesOf('atoms/RootRef', module)
     info: {
 
     },
-  })
+  });

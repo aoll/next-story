@@ -8,7 +8,7 @@ import { TableFooter } from '../..';
 storiesOf('atoms/TableFooter', module)
   .add('default', () => (
     <TableFooter
-      className={text('className', undefined)}
+      
     >
       {text('children', 'Test')}
     </TableFooter>
@@ -17,4 +17,4 @@ storiesOf('atoms/TableFooter', module)
     info: {
 
     },
-  })
+  });

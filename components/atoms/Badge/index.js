@@ -13,61 +13,30 @@ const Badge = (props) => {
 };
 
 Badge.propTypes = {
-  
-    /**
-    * The content rendered within the badge.
-    */
-    badgeContent: PropTypes.node,
-    
-  
-    /**
-    * The badge will be added relative to this node.
-    */
-    children: PropTypes.node.isRequired,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * The color of the component. It supports those theme colors that make sense for this component.
-    */
-    color: PropTypes.oneOf(['default','primary','secondary','error']),
-    
-  
-    /**
-    * The component used for the root node.
-  * Either a string to use a DOM element or a component.
-    */
-    component: PropTypes.element,
-    
-  
-    /**
-    * If `true`, the badge will be invisible.
-    */
-    invisible: PropTypes.bool,
-    
-  
-    /**
-    * Max count to show.
-    */
-    max: PropTypes.number,
-    
-  
-    /**
-    * Controls whether the badge is hidden when `badgeContent` is zero.
-    */
-    showZero: PropTypes.bool,
-    
-  
-    /**
-    * The variant to use.
-    */
-    variant: PropTypes.oneOf(['standard','dot']),
-    
+  /**
+   * The badge will be added relative to this node.
+   */
+  children: PropTypes.node.isRequired,
+  /**
+   * The color of the component. It supports those theme colors that make sense for this component.
+   */
+  color: PropTypes.oneOf(['default', 'primary', 'secondary', 'error']),
+  /**
+   * If `true`, the badge will be invisible.
+   */
+  invisible: PropTypes.bool,
+  /**
+   * Max count to show.
+   */
+  max: PropTypes.number,
+  /**
+   * Controls whether the badge is hidden when `badgeContent` is zero.
+   */
+  showZero: PropTypes.bool,
+  /**
+   * The variant to use.
+   */
+  variant: PropTypes.oneOf(['standard', 'dot']),
 };
 
 Badge.defaultProps = {

@@ -8,10 +8,7 @@ import { BottomNavigation } from '../..';
 storiesOf('atoms/BottomNavigation', module)
   .add('default', () => (
     <BottomNavigation
-      className={text('className', undefined)}
-      onChange={text('onChange', undefined)}
       showLabels={boolean('showLabels', false)}
-      value={text('value', undefined)}
     >
       {text('children', 'Test')}
     </BottomNavigation>
@@ -20,4 +17,4 @@ storiesOf('atoms/BottomNavigation', module)
     info: {
 
     },
-  })
+  });

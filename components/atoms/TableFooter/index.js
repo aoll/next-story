@@ -14,24 +14,6 @@ const TableFooter = (props) => {
 
 TableFooter.propTypes = {
   
-    /**
-    * The content of the component, normally `TableRow`.
-    */
-    children: PropTypes.node,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * The component used for the root node.
-  * Either a string to use a DOM element or a component.
-    */
-    component: PropTypes.element,
-    
 };
 
 TableFooter.defaultProps = {

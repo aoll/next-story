@@ -13,31 +13,14 @@ const Table = (props) => {
 };
 
 Table.propTypes = {
-  
-    /**
-    * The content of the table, normally `TableHead` and `TableBody`.
-    */
-    children: PropTypes.node.isRequired,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * The component used for the root node.
-  * Either a string to use a DOM element or a component.
-    */
-    component: PropTypes.element,
-    
-  
-    /**
-    * Allows TableCells to inherit padding of the Table.
-    */
-    padding: PropTypes.oneOf(['default','checkbox','dense','none']),
-    
+  /**
+   * The content of the table, normally `TableHead` and `TableBody`.
+   */
+  children: PropTypes.node.isRequired,
+  /**
+   * Allows TableCells to inherit padding of the Table.
+   */
+  padding: PropTypes.oneOf(['default', 'checkbox', 'dense', 'none']),
 };
 
 Table.defaultProps = {

@@ -8,15 +8,8 @@ import { ExpansionPanelSummary } from '../..';
 storiesOf('atoms/ExpansionPanelSummary', module)
   .add('default', () => (
     <ExpansionPanelSummary
-      className={text('className', undefined)}
       disabled={boolean('disabled', false)}
-      expanded={boolean('expanded', undefined)}
-      expandIcon={text('expandIcon', undefined)}
-      IconButtonProps={text('IconButtonProps', undefined)}
-      onBlur={text('onBlur', undefined)}
-      onChange={text('onChange', undefined)}
-      onClick={text('onClick', undefined)}
-      onFocusVisible={text('onFocusVisible', undefined)}
+      expanded={boolean('expanded', false)}
     >
       {text('children', 'Test')}
     </ExpansionPanelSummary>
@@ -25,4 +18,4 @@ storiesOf('atoms/ExpansionPanelSummary', module)
     info: {
 
     },
-  })
+  });

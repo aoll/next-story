@@ -13,52 +13,10 @@ const RadioGroup = (props) => {
 };
 
 RadioGroup.propTypes = {
-  
-    /**
-    * The content of the component.
-    */
-    children: PropTypes.node,
-    
-  
-    /**
-    * The default input value, useful when not controlling the component.
-    */
-    defaultValue: PropTypes.union,
-    
-  
-    /**
-    * The name used to reference the value of the control.
-    */
-    name: PropTypes.string,
-    
-  
-    /**
-    * @ignore
-    */
-    onBlur: PropTypes.func,
-    
-  
-    /**
-    * Callback fired when a radio button is selected.
-  * 
-  * @param {object} event The event source of the callback.
-  * You can pull out the new value by accessing `event.target.value`.
-  * @param {string} value The `value` of the selected radio button
-    */
-    onChange: PropTypes.func,
-    
-  
-    /**
-    * @ignore
-    */
-    onKeyDown: PropTypes.func,
-    
-  
-    /**
-    * Value of the selected radio button.
-    */
-    value: PropTypes.union,
-    
+  /**
+   * The name used to reference the value of the control.
+   */
+  name: PropTypes.string,
 };
 
 RadioGroup.defaultProps = {

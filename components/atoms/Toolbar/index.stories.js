@@ -8,9 +8,8 @@ import { Toolbar } from '../..';
 storiesOf('atoms/Toolbar', module)
   .add('default', () => (
     <Toolbar
-      className={text('className', undefined)}
       disableGutters={boolean('disableGutters', false)}
-      variant={select('variant', ['regular','dense'] ,'regular')}
+      variant={select('variant', ['regular', 'dense'], 'regular')}
     >
       {text('children', 'Test')}
     </Toolbar>
@@ -19,4 +18,4 @@ storiesOf('atoms/Toolbar', module)
     info: {
 
     },
-  })
+  });

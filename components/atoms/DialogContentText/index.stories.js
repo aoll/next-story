@@ -17,4 +17,4 @@ storiesOf('atoms/DialogContentText', module)
     info: {
 
     },
-  })
+  });

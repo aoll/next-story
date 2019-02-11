@@ -8,12 +8,9 @@ import { ExpansionPanel } from '../..';
 storiesOf('atoms/ExpansionPanel', module)
   .add('default', () => (
     <ExpansionPanel
-      className={text('className', undefined)}
-      CollapseProps={text('CollapseProps', undefined)}
       defaultExpanded={boolean('defaultExpanded', false)}
       disabled={boolean('disabled', false)}
-      expanded={boolean('expanded', undefined)}
-      onChange={text('onChange', undefined)}
+      expanded={boolean('expanded', false)}
       square={boolean('square', false)}
     >
       {text('children', 'Test')}
@@ -23,4 +20,4 @@ storiesOf('atoms/ExpansionPanel', module)
     info: {
 
     },
-  })
+  });

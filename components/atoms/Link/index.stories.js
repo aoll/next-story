@@ -9,10 +9,8 @@ storiesOf('atoms/Link', module)
   .add('default', () => (
     <Link
       block={boolean('block', false)}
-      className={text('className', undefined)}
-      color={select('color', ['error','inherit','primary','secondary','textPrimary','textSecondary'] ,'primary')}
-      TypographyClasses={text('TypographyClasses', undefined)}
-      underline={select('underline', ['none','hover','always'] ,'hover')}
+      color={select('color', ['error', 'inherit', 'primary', 'secondary', 'textPrimary', 'textSecondary'], 'primary')}
+      underline={select('underline', ['none', 'hover', 'always'], 'hover')}
       variant={text('variant', 'inherit')}
     >
       {text('children', 'Test')}
@@ -22,4 +20,4 @@ storiesOf('atoms/Link', module)
     info: {
 
     },
-  })
+  });

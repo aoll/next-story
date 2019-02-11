@@ -8,17 +8,11 @@ import { Drawer } from '../..';
 storiesOf('atoms/Drawer', module)
   .add('default', () => (
     <Drawer
-      anchor={select('anchor', ['left','top','right','bottom'] ,'left')}
-      BackdropProps={text('BackdropProps', undefined)}
-      className={text('className', undefined)}
+      anchor={select('anchor', ['left', 'top', 'right', 'bottom'], 'left')}
       elevation={text('elevation', 16)}
-      ModalProps={text('ModalProps', undefined)}
-      onClose={text('onClose', undefined)}
       open={boolean('open', false)}
-      PaperProps={text('PaperProps', undefined)}
-      SlideProps={text('SlideProps', undefined)}
       theme={text('theme', undefined)}
-      variant={select('variant', ['permanent','persistent','temporary'] ,'temporary')}
+      variant={select('variant', ['permanent', 'persistent', 'temporary'], 'temporary')}
     >
       {text('children', 'Test')}
     </Drawer>
@@ -27,4 +21,4 @@ storiesOf('atoms/Drawer', module)
     info: {
 
     },
-  })
+  });

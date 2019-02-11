@@ -13,15 +13,11 @@ const Portal = (props) => {
 };
 
 Portal.propTypes = {
-
-    /**
-    *
-    */
-
+  
 };
 
 Portal.defaultProps = {
-  disablePortal: false
+  
 };
 
 export default Portal;

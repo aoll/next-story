@@ -17,7 +17,7 @@ storiesOf('atoms/{name}', module)
     info: {
 
     },
-  })
+  });
 `;
 
 module.exports = template;

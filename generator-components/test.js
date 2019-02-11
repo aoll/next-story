@@ -9,6 +9,9 @@ const materialCore = require('@material-ui/core');
 // new
 // _Paper
 // Popper (component)
+//
+//
+// NUMBER
 
 const componentTemplate = require('./template/componentWithChildren.template').default;
 const storieTemplate = require('./template/storieWithChildren.template');
@@ -45,7 +48,7 @@ for (let iKey = 0; iKey < materialCoreKey.length; iKey += 1) {
 
   const parsed = reactDocs.parse(data);
 
-  // console.log(parsed);
+  console.log(parsed);
   const { props } = parsed;
   const listPropTypes = [];
   const listDefaultProps = [];
@@ -66,33 +69,45 @@ for (let iKey = 0; iKey < materialCoreKey.length; iKey += 1) {
   for (let i = 0; i < keys.length; i += 1) {
     const key = keys[i];
     const prop = props[key];
-    const entry = `
-    /**
-    * ${get(prop, 'description', '').replace(/\n/g, '\n  * ')}
-    */
-    ${key}: PropTypes.${get(prop, 'type.name', '') === 'enum' ? `oneOf([${get(prop, 'type.value', []).map(e => e.value)}])` : get(prop, 'type.name', '')}${prop.required ? '.isRequired' : ''},
-    `;
 
-    if (key !== 'classes') {
-      listPropTypes.push(entry);
-    }
+    const typeName = get(prop, 'type.name');
+    if ((typeName === 'string'
+      || typeName === 'bool'
+      || typeName === 'number'
+      || typeName === 'enum'
+      // || typeName === 'union'
+      || prop.required)
+      && (key !== 'classes'
+        && key !== 'className'
+        && key !== 'type'
+        && key !== 'value'
+      )
+    ) {
+      const entry = `/**\n   * ${get(prop, 'description', '').replace(/\n/g, '\n   * ')}\n   */
+  ${key}: PropTypes.${get(prop, 'type.name', '') === 'enum' ? `oneOf([${get(prop, 'type.value', []).map(e => e.value)}])` : get(prop, 'type.name', '')}${prop.required ? '.isRequired' : ''},`;
 
-    const defaultValue = get(prop, 'defaultValue.value', '');
-    // if (defaultValue && defaultValue.match('_react')) {
-    //   console.log('MATCH');
-    // }
-    // console.log(defaultValue);
-    if (!prop.required && key !== 'component') {
-      if (get(prop, 'defaultValue.value') && defaultValue[0] !== '_' && !defaultValue.match('_react') && !defaultValue.match('_transition')) {
-        listDefaultProps.push(`${key}: ${get(prop, 'defaultValue.value')}`);
+      if (key !== 'classes') {
+        listPropTypes.push(entry);
       }
-    }
 
-    if (key !== 'classes' && key !== 'children' && key !== 'component') {
-      if (get(prop, 'type.name', '') === 'enum') {
-        listProps.push(`${key}={${transpileForKnob[get(prop, 'type.name', '')]}('${key}', [${get(prop, 'type.value', []).map(e => e.value)}] ,${get(prop, 'defaultValue.value')})}`);
-      } else if (defaultValue[0] !== '_' && !defaultValue.match('_react') && !defaultValue.match('_transition')) {
-        listProps.push(`${key}={${(transpileForKnob[get(prop, 'type.name', '')] || 'text')}('${key}', ${get(prop, 'defaultValue.value')})}`);
+      const defaultValue = get(prop, 'defaultValue.value');
+
+      if (!prop.required && key !== 'component') {
+        // if (defaultValue && typeof defaultValue === 'string' && defaultValue[0] !== '_' && !defaultValue.match('_react') && !defaultValue.match('_transition')) {
+        if (defaultValue) {
+          listDefaultProps.push(`${key}: ${get(prop, 'defaultValue.value')}`);
+        }
+        // else if (defaultValue && (typeof defaultValue === 'boolean' || typeof defaultValue === 'number')) {
+        //   listDefaultProps.push(`${key}: ${defaultValue}`);
+        // }
+      }
+
+      if (key !== 'classes' && key !== 'children' && key !== 'component') {
+        if (typeName === 'enum') {
+          listProps.push(`${key}={${transpileForKnob[typeName]}('${key}', [${get(prop, 'type.value', []).map(e => e.value)}], ${defaultValue})}`);
+        } else {
+          listProps.push(`${key}={${(transpileForKnob[get(prop, 'type.name', '')] || 'text')}('${key}', ${get(prop, 'defaultValue.value', (typeName === 'bool' ? false : undefined))})}`);
+        }
       }
     }
   }
@@ -103,21 +118,29 @@ for (let iKey = 0; iKey < materialCoreKey.length; iKey += 1) {
   const componentTemplateHydrated = componentTemplate
     .replace(/{name}/g, name)
     .replace('{propTypes}', listPropTypes.join('\n  '))
-    .replace('{defaultProps}', listDefaultProps.join(',\n  '));
+    .replace('{defaultProps}', listDefaultProps.join(',\n  '))
+    .replace(/ ,/g, ',')
+    .replace(/','/g, "', '");
 
   const storieTemplateHydrated = storieTemplate
     .replace(/{name}/g, name)
-    .replace('{props}', listProps.join('\n      '));
+    .replace('{props}', listProps.join('\n      '))
+    .replace(/ ,/g, ',')
+    .replace(/','/g, "', '");
 
 
-  console.log(storieTemplateHydrated);
+  // console.log(storieTemplateHydrated);
   // console.log(componentTemplateHydrated);
   // console.log(listProps);
   // console.log(template);
 
 
   const dirPath = `./output/${name}`;
-  fs.mkdirSync(dirPath);
+  try {
+    fs.mkdirSync(dirPath);
+  } catch (e) {
+    console.log('');
+  }
 
   const pathToWrite = `./output/${name}/index.js`;
   // write to a new file named 2pac.txt

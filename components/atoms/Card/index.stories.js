@@ -8,7 +8,6 @@ import { Card } from '../..';
 storiesOf('atoms/Card', module)
   .add('default', () => (
     <Card
-      className={text('className', undefined)}
       raised={boolean('raised', false)}
     >
       {text('children', 'Test')}
@@ -18,4 +17,4 @@ storiesOf('atoms/Card', module)
     info: {
 
     },
-  })
+  });

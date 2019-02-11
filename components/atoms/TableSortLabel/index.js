@@ -13,42 +13,18 @@ const TableSortLabel = (props) => {
 };
 
 TableSortLabel.propTypes = {
-  
-    /**
-    * If `true`, the label will have the active styling (should be true for the sorted column).
-    */
-    active: PropTypes.bool,
-    
-  
-    /**
-    * Label contents, the arrow will be appended automatically.
-    */
-    children: PropTypes.node,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * The current sort direction.
-    */
-    direction: PropTypes.oneOf(['asc','desc']),
-    
-  
-    /**
-    * Hide sort icon when active is false.
-    */
-    hideSortIcon: PropTypes.bool,
-    
-  
-    /**
-    * Sort icon to use.
-    */
-    IconComponent: PropTypes.element,
-    
+  /**
+   * If `true`, the label will have the active styling (should be true for the sorted column).
+   */
+  active: PropTypes.bool,
+  /**
+   * The current sort direction.
+   */
+  direction: PropTypes.oneOf(['asc', 'desc']),
+  /**
+   * Hide sort icon when active is false.
+   */
+  hideSortIcon: PropTypes.bool,
 };
 
 TableSortLabel.defaultProps = {

@@ -8,8 +8,7 @@ import { ListSubheader } from '../..';
 storiesOf('atoms/ListSubheader', module)
   .add('default', () => (
     <ListSubheader
-      className={text('className', undefined)}
-      color={select('color', ['default','primary','inherit'] ,'default')}
+      color={select('color', ['default', 'primary', 'inherit'], 'default')}
       disableGutters={boolean('disableGutters', false)}
       disableSticky={boolean('disableSticky', false)}
       inset={boolean('inset', false)}
@@ -21,4 +20,4 @@ storiesOf('atoms/ListSubheader', module)
     info: {
 
     },
-  })
+  });

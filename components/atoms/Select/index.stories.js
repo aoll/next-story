@@ -10,18 +10,10 @@ storiesOf('atoms/Select', module)
     <Select
       autoWidth={boolean('autoWidth', false)}
       displayEmpty={boolean('displayEmpty', false)}
-      inputProps={text('inputProps', undefined)}
-      MenuProps={text('MenuProps', undefined)}
       multiple={boolean('multiple', false)}
       native={boolean('native', false)}
-      onChange={text('onChange', undefined)}
-      onClose={text('onClose', undefined)}
-      onOpen={text('onOpen', undefined)}
-      open={boolean('open', undefined)}
-      renderValue={text('renderValue', undefined)}
-      SelectDisplayProps={text('SelectDisplayProps', undefined)}
-      value={text('value', undefined)}
-      variant={select('variant', ['standard','outlined','filled'] ,undefined)}
+      open={boolean('open', false)}
+      variant={select('variant', ['standard', 'outlined', 'filled'], undefined)}
     >
       {text('children', 'Test')}
     </Select>
@@ -30,4 +22,4 @@ storiesOf('atoms/Select', module)
     info: {
 
     },
-  })
+  });

@@ -13,30 +13,22 @@ const StepIcon = (props) => {
 };
 
 StepIcon.propTypes = {
-  
-    /**
-    * Whether this step is active.
-    */
-    active: PropTypes.bool,
-    
-  
-    /**
-    * Mark the step as completed. Is passed to child components.
-    */
-    completed: PropTypes.bool,
-    
-  
-    /**
-    * Mark the step as failed.
-    */
-    error: PropTypes.bool,
-    
-  
-    /**
-    * The icon displayed by the step label.
-    */
-    icon: PropTypes.node.isRequired,
-    
+  /**
+   * Whether this step is active.
+   */
+  active: PropTypes.bool,
+  /**
+   * Mark the step as completed. Is passed to child components.
+   */
+  completed: PropTypes.bool,
+  /**
+   * Mark the step as failed.
+   */
+  error: PropTypes.bool,
+  /**
+   * The icon displayed by the step label.
+   */
+  icon: PropTypes.node.isRequired,
 };
 
 StepIcon.defaultProps = {

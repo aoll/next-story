@@ -8,12 +8,8 @@ import { GridListTileBar } from '../..';
 storiesOf('atoms/GridListTileBar', module)
   .add('default', () => (
     <GridListTileBar
-      actionIcon={text('actionIcon', undefined)}
-      actionPosition={select('actionPosition', ['left','right'] ,'right')}
-      className={text('className', undefined)}
-      subtitle={text('subtitle', undefined)}
-      title={text('title', undefined)}
-      titlePosition={select('titlePosition', ['top','bottom'] ,'bottom')}
+      actionPosition={select('actionPosition', ['left', 'right'], 'right')}
+      titlePosition={select('titlePosition', ['top', 'bottom'], 'bottom')}
     >
       {text('children', 'Test')}
     </GridListTileBar>
@@ -22,4 +18,4 @@ storiesOf('atoms/GridListTileBar', module)
     info: {
 
     },
-  })
+  });

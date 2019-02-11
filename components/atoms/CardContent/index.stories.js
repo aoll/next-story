@@ -8,7 +8,7 @@ import { CardContent } from '../..';
 storiesOf('atoms/CardContent', module)
   .add('default', () => (
     <CardContent
-      className={text('className', undefined)}
+      
     >
       {text('children', 'Test')}
     </CardContent>
@@ -17,4 +17,4 @@ storiesOf('atoms/CardContent', module)
     info: {
 
     },
-  })
+  });

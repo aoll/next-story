@@ -8,7 +8,7 @@ import { ListItemAvatar } from '../..';
 storiesOf('atoms/ListItemAvatar', module)
   .add('default', () => (
     <ListItemAvatar
-      className={text('className', undefined)}
+      
     >
       {text('children', 'Test')}
     </ListItemAvatar>
@@ -17,4 +17,4 @@ storiesOf('atoms/ListItemAvatar', module)
     info: {
 
     },
-  })
+  });

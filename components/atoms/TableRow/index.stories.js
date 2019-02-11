@@ -8,7 +8,6 @@ import { TableRow } from '../..';
 storiesOf('atoms/TableRow', module)
   .add('default', () => (
     <TableRow
-      className={text('className', undefined)}
       hover={boolean('hover', false)}
       selected={boolean('selected', false)}
     >
@@ -19,4 +18,4 @@ storiesOf('atoms/TableRow', module)
     info: {
 
     },
-  })
+  });

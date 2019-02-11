@@ -8,10 +8,9 @@ import { IconButton } from '../..';
 storiesOf('atoms/IconButton', module)
   .add('default', () => (
     <IconButton
-      className={text('className', undefined)}
-      color={select('color', ['default','inherit','primary','secondary'] ,'default')}
+      color={select('color', ['default', 'inherit', 'primary', 'secondary'], 'default')}
       disabled={boolean('disabled', false)}
-      disableRipple={boolean('disableRipple', undefined)}
+      disableRipple={boolean('disableRipple', false)}
     >
       {text('children', 'Test')}
     </IconButton>
@@ -20,4 +19,4 @@ storiesOf('atoms/IconButton', module)
     info: {
 
     },
-  })
+  });

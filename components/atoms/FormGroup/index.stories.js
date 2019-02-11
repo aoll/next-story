@@ -8,7 +8,6 @@ import { FormGroup } from '../..';
 storiesOf('atoms/FormGroup', module)
   .add('default', () => (
     <FormGroup
-      className={text('className', undefined)}
       row={boolean('row', false)}
     >
       {text('children', 'Test')}
@@ -18,4 +17,4 @@ storiesOf('atoms/FormGroup', module)
     info: {
 
     },
-  })
+  });

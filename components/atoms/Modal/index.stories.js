@@ -8,10 +8,7 @@ import { Modal } from '../..';
 storiesOf('atoms/Modal', module)
   .add('default', () => (
     <Modal
-      BackdropProps={text('BackdropProps', undefined)}
-      className={text('className', undefined)}
       closeAfterTransition={boolean('closeAfterTransition', false)}
-      container={text('container', undefined)}
       disableAutoFocus={boolean('disableAutoFocus', false)}
       disableBackdropClick={boolean('disableBackdropClick', false)}
       disableEnforceFocus={boolean('disableEnforceFocus', false)}
@@ -20,11 +17,7 @@ storiesOf('atoms/Modal', module)
       disableRestoreFocus={boolean('disableRestoreFocus', false)}
       hideBackdrop={boolean('hideBackdrop', false)}
       keepMounted={boolean('keepMounted', false)}
-      onBackdropClick={text('onBackdropClick', undefined)}
-      onClose={text('onClose', undefined)}
-      onEscapeKeyDown={text('onEscapeKeyDown', undefined)}
-      onRendered={text('onRendered', undefined)}
-      open={boolean('open', undefined)}
+      open={boolean('open', false)}
     >
       {text('children', 'Test')}
     </Modal>
@@ -33,4 +26,4 @@ storiesOf('atoms/Modal', module)
     info: {
 
     },
-  })
+  });

@@ -8,10 +8,8 @@ import { CardMedia } from '../..';
 storiesOf('atoms/CardMedia', module)
   .add('default', () => (
     <CardMedia
-      className={text('className', undefined)}
       image={text('image', undefined)}
       src={text('src', undefined)}
-      style={text('style', undefined)}
     >
       {text('children', 'Test')}
     </CardMedia>
@@ -20,4 +18,4 @@ storiesOf('atoms/CardMedia', module)
     info: {
 
     },
-  })
+  });

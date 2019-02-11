@@ -13,15 +13,11 @@ const CssBaseline = (props) => {
 };
 
 CssBaseline.propTypes = {
-
-    /**
-    *
-    */
-
+  
 };
 
 CssBaseline.defaultProps = {
-  children: null
+  
 };
 
 export default CssBaseline;

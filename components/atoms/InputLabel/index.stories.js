@@ -8,17 +8,14 @@ import { InputLabel } from '../..';
 storiesOf('atoms/InputLabel', module)
   .add('default', () => (
     <InputLabel
-      className={text('className', undefined)}
       disableAnimation={boolean('disableAnimation', false)}
-      disabled={boolean('disabled', undefined)}
-      error={boolean('error', undefined)}
-      focused={boolean('focused', undefined)}
-      FormLabelClasses={text('FormLabelClasses', undefined)}
-      margin={select('margin', ['dense'] ,undefined)}
-      muiFormControl={text('muiFormControl', undefined)}
-      required={boolean('required', undefined)}
-      shrink={boolean('shrink', undefined)}
-      variant={select('variant', ['standard','outlined','filled'] ,undefined)}
+      disabled={boolean('disabled', false)}
+      error={boolean('error', false)}
+      focused={boolean('focused', false)}
+      margin={select('margin', ['dense'], undefined)}
+      required={boolean('required', false)}
+      shrink={boolean('shrink', false)}
+      variant={select('variant', ['standard', 'outlined', 'filled'], undefined)}
     >
       {text('children', 'Test')}
     </InputLabel>
@@ -27,4 +24,4 @@ storiesOf('atoms/InputLabel', module)
     info: {
 
     },
-  })
+  });

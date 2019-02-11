@@ -10,9 +10,8 @@ storiesOf('atoms/Stepper', module)
     <Stepper
       activeStep={text('activeStep', 0)}
       alternativeLabel={boolean('alternativeLabel', false)}
-      className={text('className', undefined)}
       nonLinear={boolean('nonLinear', false)}
-      orientation={select('orientation', ['horizontal','vertical'] ,'horizontal')}
+      orientation={select('orientation', ['horizontal', 'vertical'], 'horizontal')}
     >
       {text('children', 'Test')}
     </Stepper>
@@ -21,4 +20,4 @@ storiesOf('atoms/Stepper', module)
     info: {
 
     },
-  })
+  });

@@ -13,56 +13,27 @@ const Link = (props) => {
 };
 
 Link.propTypes = {
-  
-    /**
-    * Controls whether the link is inline or not. When `block` is true the link is not inline
-  *  when `block` is false it is.
-    */
-    block: PropTypes.bool,
-    
-  
-    /**
-    * The content of the link.
-    */
-    children: PropTypes.node.isRequired,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * The color of the link.
-    */
-    color: PropTypes.oneOf(['error','inherit','primary','secondary','textPrimary','textSecondary']),
-    
-  
-    /**
-    * The component used for the root node.
-  * Either a string to use a DOM element or a component.
-    */
-    component: PropTypes.element,
-    
-  
-    /**
-    * `classes` property applied to the [`Typography`](/api/typography/) element.
-    */
-    TypographyClasses: PropTypes.object,
-    
-  
-    /**
-    * Controls when the link should have an underline.
-    */
-    underline: PropTypes.oneOf(['none','hover','always']),
-    
-  
-    /**
-    * Applies the theme typography styles.
-    */
-    variant: PropTypes.string,
-    
+  /**
+   * Controls whether the link is inline or not. When `block` is true the link is not inline
+   *  when `block` is false it is.
+   */
+  block: PropTypes.bool,
+  /**
+   * The content of the link.
+   */
+  children: PropTypes.node.isRequired,
+  /**
+   * The color of the link.
+   */
+  color: PropTypes.oneOf(['error', 'inherit', 'primary', 'secondary', 'textPrimary', 'textSecondary']),
+  /**
+   * Controls when the link should have an underline.
+   */
+  underline: PropTypes.oneOf(['none', 'hover', 'always']),
+  /**
+   * Applies the theme typography styles.
+   */
+  variant: PropTypes.string,
 };
 
 Link.defaultProps = {

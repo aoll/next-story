@@ -13,66 +13,31 @@ const TableCell = (props) => {
 };
 
 TableCell.propTypes = {
-  
-    /**
-    * Set the text-align on the table cell content.
-  * 
-  * Monetary or generally number fields **should be right aligned** as that allows
-  * you to add them up quickly in your head without having to worry about decimals.
-    */
-    align: PropTypes.oneOf(['inherit','left','center','right','justify']),
-    
-  
-    /**
-    * The table cell contents.
-    */
-    children: PropTypes.node,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * The component used for the root node.
-  * Either a string to use a DOM element or a component.
-    */
-    component: PropTypes.element,
-    
-  
-    /**
-    * If `true`, content will align to the right.
-    */
-    numeric: PropTypes.custom,
-    
-  
-    /**
-    * Sets the padding applied to the cell.
-  * By default, the Table parent component set the value.
-    */
-    padding: PropTypes.oneOf(['default','checkbox','dense','none']),
-    
-  
-    /**
-    * Set scope attribute.
-    */
-    scope: PropTypes.string,
-    
-  
-    /**
-    * Set aria-sort direction.
-    */
-    sortDirection: PropTypes.oneOf(['asc','desc',false]),
-    
-  
-    /**
-    * Specify the cell type.
-  * By default, the TableHead, TableBody or TableFooter parent component set the value.
-    */
-    variant: PropTypes.oneOf(['head','body','footer']),
-    
+  /**
+   * Set the text-align on the table cell content.
+   * 
+   * Monetary or generally number fields **should be right aligned** as that allows
+   * you to add them up quickly in your head without having to worry about decimals.
+   */
+  align: PropTypes.oneOf(['inherit', 'left', 'center', 'right', 'justify']),
+  /**
+   * Sets the padding applied to the cell.
+   * By default, the Table parent component set the value.
+   */
+  padding: PropTypes.oneOf(['default', 'checkbox', 'dense', 'none']),
+  /**
+   * Set scope attribute.
+   */
+  scope: PropTypes.string,
+  /**
+   * Set aria-sort direction.
+   */
+  sortDirection: PropTypes.oneOf(['asc', 'desc',false]),
+  /**
+   * Specify the cell type.
+   * By default, the TableHead, TableBody or TableFooter parent component set the value.
+   */
+  variant: PropTypes.oneOf(['head', 'body', 'footer']),
 };
 
 TableCell.defaultProps = {

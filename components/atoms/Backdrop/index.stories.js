@@ -8,10 +8,8 @@ import { Backdrop } from '../..';
 storiesOf('atoms/Backdrop', module)
   .add('default', () => (
     <Backdrop
-      className={text('className', undefined)}
       invisible={boolean('invisible', false)}
-      open={boolean('open', undefined)}
-      transitionDuration={text('transitionDuration', undefined)}
+      open={boolean('open', false)}
     >
       {text('children', 'Test')}
     </Backdrop>
@@ -20,4 +18,4 @@ storiesOf('atoms/Backdrop', module)
     info: {
 
     },
-  })
+  });

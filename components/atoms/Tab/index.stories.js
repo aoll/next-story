@@ -8,17 +8,10 @@ import { Tab } from '../..';
 storiesOf('atoms/Tab', module)
   .add('default', () => (
     <Tab
-      className={text('className', undefined)}
       disabled={boolean('disabled', false)}
-      fullWidth={boolean('fullWidth', undefined)}
-      icon={text('icon', undefined)}
-      indicator={text('indicator', undefined)}
-      label={text('label', undefined)}
-      onChange={text('onChange', undefined)}
-      onClick={text('onClick', undefined)}
-      selected={boolean('selected', undefined)}
-      textColor={select('textColor', ['secondary','primary','inherit'] ,'inherit')}
-      value={text('value', undefined)}
+      fullWidth={boolean('fullWidth', false)}
+      selected={boolean('selected', false)}
+      textColor={select('textColor', ['secondary', 'primary', 'inherit'], 'inherit')}
     >
       {text('children', 'Test')}
     </Tab>
@@ -27,4 +20,4 @@ storiesOf('atoms/Tab', module)
     info: {
 
     },
-  })
+  });

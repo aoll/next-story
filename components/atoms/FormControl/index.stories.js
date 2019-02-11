@@ -8,13 +8,12 @@ import { FormControl } from '../..';
 storiesOf('atoms/FormControl', module)
   .add('default', () => (
     <FormControl
-      className={text('className', undefined)}
       disabled={boolean('disabled', false)}
       error={boolean('error', false)}
       fullWidth={boolean('fullWidth', false)}
-      margin={select('margin', ['none','dense','normal'] ,'none')}
+      margin={select('margin', ['none', 'dense', 'normal'], 'none')}
       required={boolean('required', false)}
-      variant={select('variant', ['standard','outlined','filled'] ,'standard')}
+      variant={select('variant', ['standard', 'outlined', 'filled'], 'standard')}
     >
       {text('children', 'Test')}
     </FormControl>
@@ -23,4 +22,4 @@ storiesOf('atoms/FormControl', module)
     info: {
 
     },
-  })
+  });

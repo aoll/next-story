@@ -9,14 +9,12 @@ storiesOf('atoms/Step', module)
   .add('default', () => (
     <Step
       active={boolean('active', false)}
-      alternativeLabel={boolean('alternativeLabel', undefined)}
-      className={text('className', undefined)}
+      alternativeLabel={boolean('alternativeLabel', false)}
       completed={boolean('completed', false)}
-      connector={text('connector', undefined)}
       disabled={boolean('disabled', false)}
       index={text('index', undefined)}
-      last={boolean('last', undefined)}
-      orientation={select('orientation', ['horizontal','vertical'] ,undefined)}
+      last={boolean('last', false)}
+      orientation={select('orientation', ['horizontal', 'vertical'], undefined)}
     >
       {text('children', 'Test')}
     </Step>
@@ -25,4 +23,4 @@ storiesOf('atoms/Step', module)
     info: {
 
     },
-  })
+  });

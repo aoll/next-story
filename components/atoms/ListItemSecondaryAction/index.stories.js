@@ -8,7 +8,7 @@ import { ListItemSecondaryAction } from '../..';
 storiesOf('atoms/ListItemSecondaryAction', module)
   .add('default', () => (
     <ListItemSecondaryAction
-      className={text('className', undefined)}
+      
     >
       {text('children', 'Test')}
     </ListItemSecondaryAction>
@@ -17,4 +17,4 @@ storiesOf('atoms/ListItemSecondaryAction', module)
     info: {
 
     },
-  })
+  });

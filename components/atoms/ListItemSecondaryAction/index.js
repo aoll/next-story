@@ -14,17 +14,6 @@ const ListItemSecondaryAction = (props) => {
 
 ListItemSecondaryAction.propTypes = {
   
-    /**
-    * The content of the component, normally an `IconButton` or selection control.
-    */
-    children: PropTypes.node,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
 };
 
 ListItemSecondaryAction.defaultProps = {

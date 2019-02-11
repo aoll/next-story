@@ -8,9 +8,7 @@ import { SnackbarContent } from '../..';
 storiesOf('atoms/SnackbarContent', module)
   .add('default', () => (
     <SnackbarContent
-      action={text('action', undefined)}
-      className={text('className', undefined)}
-      message={text('message', undefined)}
+      
     >
       {text('children', 'Test')}
     </SnackbarContent>
@@ -19,4 +17,4 @@ storiesOf('atoms/SnackbarContent', module)
     info: {
 
     },
-  })
+  });

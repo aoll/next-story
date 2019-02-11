@@ -14,17 +14,6 @@ const DialogContent = (props) => {
 
 DialogContent.propTypes = {
   
-    /**
-    * The content of the component.
-    */
-    children: PropTypes.node,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
 };
 
 DialogContent.defaultProps = {

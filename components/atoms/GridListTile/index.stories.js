@@ -8,7 +8,6 @@ import { GridListTile } from '../..';
 storiesOf('atoms/GridListTile', module)
   .add('default', () => (
     <GridListTile
-      className={text('className', undefined)}
       cols={text('cols', 1)}
       rows={text('rows', 1)}
     >
@@ -19,4 +18,4 @@ storiesOf('atoms/GridListTile', module)
     info: {
 
     },
-  })
+  });

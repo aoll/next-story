@@ -13,24 +13,10 @@ const FormGroup = (props) => {
 };
 
 FormGroup.propTypes = {
-  
-    /**
-    * The content of the component.
-    */
-    children: PropTypes.node,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * Display group of elements in a compact row.
-    */
-    row: PropTypes.bool,
-    
+  /**
+   * Display group of elements in a compact row.
+   */
+  row: PropTypes.bool,
 };
 
 FormGroup.defaultProps = {

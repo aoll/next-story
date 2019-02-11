@@ -8,15 +8,13 @@ import { FormHelperText } from '../..';
 storiesOf('atoms/FormHelperText', module)
   .add('default', () => (
     <FormHelperText
-      className={text('className', undefined)}
-      disabled={boolean('disabled', undefined)}
-      error={boolean('error', undefined)}
-      filled={boolean('filled', undefined)}
-      focused={boolean('focused', undefined)}
-      margin={select('margin', ['dense'] ,undefined)}
-      muiFormControl={text('muiFormControl', undefined)}
-      required={boolean('required', undefined)}
-      variant={select('variant', ['standard','outlined','filled'] ,undefined)}
+      disabled={boolean('disabled', false)}
+      error={boolean('error', false)}
+      filled={boolean('filled', false)}
+      focused={boolean('focused', false)}
+      margin={select('margin', ['dense'], undefined)}
+      required={boolean('required', false)}
+      variant={select('variant', ['standard', 'outlined', 'filled'], undefined)}
     >
       {text('children', 'Test')}
     </FormHelperText>
@@ -25,4 +23,4 @@ storiesOf('atoms/FormHelperText', module)
     info: {
 
     },
-  })
+  });

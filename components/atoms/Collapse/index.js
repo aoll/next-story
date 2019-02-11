@@ -13,88 +13,18 @@ const Collapse = (props) => {
 };
 
 Collapse.propTypes = {
-  
-    /**
-    * The content node to be collapsed.
-    */
-    children: PropTypes.node,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * The height of the container when collapsed.
-    */
-    collapsedHeight: PropTypes.string,
-    
-  
-    /**
-    * The component used for the root node.
-  * Either a string to use a DOM element or a component.
-    */
-    component: PropTypes.element,
-    
-  
-    /**
-    * If `true`, the component will transition in.
-    */
-    in: PropTypes.bool,
-    
-  
-    /**
-    * @ignore
-    */
-    onEnter: PropTypes.func,
-    
-  
-    /**
-    * @ignore
-    */
-    onEntered: PropTypes.func,
-    
-  
-    /**
-    * @ignore
-    */
-    onEntering: PropTypes.func,
-    
-  
-    /**
-    * @ignore
-    */
-    onExit: PropTypes.func,
-    
-  
-    /**
-    * @ignore
-    */
-    onExiting: PropTypes.func,
-    
-  
-    /**
-    * @ignore
-    */
-    style: PropTypes.object,
-    
-  
-    /**
-    * @ignore
-    */
-    theme: PropTypes.object.isRequired,
-    
-  
-    /**
-    * The duration for the transition, in milliseconds.
-  * You may specify a single timeout for all transitions, or individually with an object.
-  * 
-  * Set to 'auto' to automatically calculate transition time based on height.
-    */
-    timeout: PropTypes.union,
-    
+  /**
+   * The height of the container when collapsed.
+   */
+  collapsedHeight: PropTypes.string,
+  /**
+   * If `true`, the component will transition in.
+   */
+  in: PropTypes.bool,
+  /**
+   * @ignore
+   */
+  theme: PropTypes.object.isRequired,
 };
 
 Collapse.defaultProps = {

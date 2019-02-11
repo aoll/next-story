@@ -13,21 +13,11 @@ const NoSsr = (props) => {
 };
 
 NoSsr.propTypes = {
-
-    /**
-    *
-    */
-
-
-    /**
-    *
-    */
-
+  
 };
 
 NoSsr.defaultProps = {
-  defer: false,
-  fallback: null
+  
 };
 
 export default NoSsr;

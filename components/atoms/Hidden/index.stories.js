@@ -8,14 +8,12 @@ import { Hidden } from '../..';
 storiesOf('atoms/Hidden', module)
   .add('default', () => (
     <Hidden
-      className={text('className', undefined)}
-      implementation={select('implementation', ['js','css'] ,'js')}
-      initialWidth={select('initialWidth', ['xs','sm','md','lg','xl'] ,undefined)}
+      implementation={select('implementation', ['js', 'css'], 'js')}
+      initialWidth={select('initialWidth', ['xs', 'sm', 'md', 'lg', 'xl'], undefined)}
       lgDown={boolean('lgDown', false)}
       lgUp={boolean('lgUp', false)}
       mdDown={boolean('mdDown', false)}
       mdUp={boolean('mdUp', false)}
-      only={text('only', undefined)}
       smDown={boolean('smDown', false)}
       smUp={boolean('smUp', false)}
       xlDown={boolean('xlDown', false)}
@@ -30,4 +28,4 @@ storiesOf('atoms/Hidden', module)
     info: {
 
     },
-  })
+  });

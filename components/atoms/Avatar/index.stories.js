@@ -10,8 +10,6 @@ storiesOf('atoms/Avatar', module)
     <Avatar
       alt={text('alt', undefined)}
       childrenClassName={text('childrenClassName', undefined)}
-      className={text('className', undefined)}
-      imgProps={text('imgProps', undefined)}
       sizes={text('sizes', undefined)}
       src={text('src', undefined)}
       srcSet={text('srcSet', undefined)}
@@ -23,4 +21,4 @@ storiesOf('atoms/Avatar', module)
     info: {
 
     },
-  })
+  });

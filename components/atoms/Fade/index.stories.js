@@ -8,10 +8,7 @@ import { Fade } from '../..';
 storiesOf('atoms/Fade', module)
   .add('default', () => (
     <Fade
-      in={boolean('in', undefined)}
-      onEnter={text('onEnter', undefined)}
-      onExit={text('onExit', undefined)}
-      style={text('style', undefined)}
+      in={boolean('in', false)}
       theme={text('theme', undefined)}
     >
       {text('children', 'Test')}
@@ -21,4 +18,4 @@ storiesOf('atoms/Fade', module)
     info: {
 
     },
-  })
+  });

@@ -8,9 +8,8 @@ import { SvgIcon } from '../..';
 storiesOf('atoms/SvgIcon', module)
   .add('default', () => (
     <SvgIcon
-      className={text('className', undefined)}
-      color={select('color', ['inherit','primary','secondary','action','error','disabled'] ,'inherit')}
-      fontSize={select('fontSize', ['inherit','default','small','large'] ,'default')}
+      color={select('color', ['inherit', 'primary', 'secondary', 'action', 'error', 'disabled'], 'inherit')}
+      fontSize={select('fontSize', ['inherit', 'default', 'small', 'large'], 'default')}
       nativeColor={text('nativeColor', undefined)}
       shapeRendering={text('shapeRendering', undefined)}
       titleAccess={text('titleAccess', undefined)}
@@ -23,4 +22,4 @@ storiesOf('atoms/SvgIcon', module)
     info: {
 
     },
-  })
+  });

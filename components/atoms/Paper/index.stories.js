@@ -8,7 +8,6 @@ import { Paper } from '../..';
 storiesOf('atoms/Paper', module)
   .add('default', () => (
     <Paper
-      className={text('className', undefined)}
       elevation={text('elevation', 2)}
       square={boolean('square', false)}
     >
@@ -19,4 +18,4 @@ storiesOf('atoms/Paper', module)
     info: {
 
     },
-  })
+  });

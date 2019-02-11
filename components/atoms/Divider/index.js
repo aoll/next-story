@@ -13,45 +13,24 @@ const Divider = (props) => {
 };
 
 Divider.propTypes = {
-  
-    /**
-    * Absolutely position the element.
-    */
-    absolute: PropTypes.bool,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * The component used for the root node.
-  * Either a string to use a DOM element or a component.
-    */
-    component: PropTypes.element,
-    
-  
-    /**
-    * If `true`, the divider will be indented.
-  * __WARNING__: `inset` is deprecated.
-  * Instead use `variant="inset"`.
-    */
-    inset: PropTypes.bool,
-    
-  
-    /**
-    * If `true`, the divider will have a lighter color.
-    */
-    light: PropTypes.bool,
-    
-  
-    /**
-    * The variant to use.
-    */
-    variant: PropTypes.oneOf(['fullWidth','inset','middle']),
-    
+  /**
+   * Absolutely position the element.
+   */
+  absolute: PropTypes.bool,
+  /**
+   * If `true`, the divider will be indented.
+   * __WARNING__: `inset` is deprecated.
+   * Instead use `variant="inset"`.
+   */
+  inset: PropTypes.bool,
+  /**
+   * If `true`, the divider will have a lighter color.
+   */
+  light: PropTypes.bool,
+  /**
+   * The variant to use.
+   */
+  variant: PropTypes.oneOf(['fullWidth', 'inset', 'middle']),
 };
 
 Divider.defaultProps = {

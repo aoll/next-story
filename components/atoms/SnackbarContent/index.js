@@ -14,23 +14,6 @@ const SnackbarContent = (props) => {
 
 SnackbarContent.propTypes = {
   
-    /**
-    * The action to display.
-    */
-    action: PropTypes.node,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * The message to display.
-    */
-    message: PropTypes.node,
-    
 };
 
 SnackbarContent.defaultProps = {

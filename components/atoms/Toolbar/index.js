@@ -13,30 +13,14 @@ const Toolbar = (props) => {
 };
 
 Toolbar.propTypes = {
-  
-    /**
-    * Toolbar children, usually a mixture of `IconButton`, `Button` and `Typography`.
-    */
-    children: PropTypes.node,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * If `true`, disables gutter padding.
-    */
-    disableGutters: PropTypes.bool,
-    
-  
-    /**
-    * The variant to use.
-    */
-    variant: PropTypes.oneOf(['regular','dense']),
-    
+  /**
+   * If `true`, disables gutter padding.
+   */
+  disableGutters: PropTypes.bool,
+  /**
+   * The variant to use.
+   */
+  variant: PropTypes.oneOf(['regular', 'dense']),
 };
 
 Toolbar.defaultProps = {

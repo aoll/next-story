@@ -9,8 +9,7 @@ storiesOf('atoms/TableSortLabel', module)
   .add('default', () => (
     <TableSortLabel
       active={boolean('active', false)}
-      className={text('className', undefined)}
-      direction={select('direction', ['asc','desc'] ,'desc')}
+      direction={select('direction', ['asc', 'desc'], 'desc')}
       hideSortIcon={boolean('hideSortIcon', false)}
     >
       {text('children', 'Test')}
@@ -20,4 +19,4 @@ storiesOf('atoms/TableSortLabel', module)
     info: {
 
     },
-  })
+  });

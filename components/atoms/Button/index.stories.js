@@ -8,18 +8,16 @@ import { Button } from '../..';
 storiesOf('atoms/Button', module)
   .add('default', () => (
     <Button
-      className={text('className', undefined)}
-      color={select('color', ['default','inherit','primary','secondary'] ,'default')}
+      color={select('color', ['default', 'inherit', 'primary', 'secondary'], 'default')}
       disabled={boolean('disabled', false)}
       disableFocusRipple={boolean('disableFocusRipple', false)}
-      disableRipple={boolean('disableRipple', undefined)}
+      disableRipple={boolean('disableRipple', false)}
       focusVisibleClassName={text('focusVisibleClassName', undefined)}
       fullWidth={boolean('fullWidth', false)}
       href={text('href', undefined)}
       mini={boolean('mini', false)}
-      size={select('size', ['small','medium','large'] ,'medium')}
-      type={text('type', 'button')}
-      variant={select('variant', ['text','outlined','contained','fab','extendedFab','flat','raised'] ,'text')}
+      size={select('size', ['small', 'medium', 'large'], 'medium')}
+      variant={select('variant', ['text', 'outlined', 'contained', 'fab', 'extendedFab', 'flat', 'raised'], 'text')}
     >
       {text('children', 'Test')}
     </Button>
@@ -28,4 +26,4 @@ storiesOf('atoms/Button', module)
     info: {
 
     },
-  })
+  });

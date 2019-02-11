@@ -9,10 +9,9 @@ storiesOf('atoms/Divider', module)
   .add('default', () => (
     <Divider
       absolute={boolean('absolute', false)}
-      className={text('className', undefined)}
-      inset={boolean('inset', undefined)}
+      inset={boolean('inset', false)}
       light={boolean('light', false)}
-      variant={select('variant', ['fullWidth','inset','middle'] ,'fullWidth')}
+      variant={select('variant', ['fullWidth', 'inset', 'middle'], 'fullWidth')}
     >
       {text('children', 'Test')}
     </Divider>
@@ -21,4 +20,4 @@ storiesOf('atoms/Divider', module)
     info: {
 
     },
-  })
+  });

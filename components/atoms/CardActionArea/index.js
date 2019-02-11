@@ -13,24 +13,10 @@ const CardActionArea = (props) => {
 };
 
 CardActionArea.propTypes = {
-  
-    /**
-    * The content of the component.
-    */
-    children: PropTypes.node,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * @ignore
-    */
-    focusVisibleClassName: PropTypes.string,
-    
+  /**
+   * @ignore
+   */
+  focusVisibleClassName: PropTypes.string,
 };
 
 CardActionArea.defaultProps = {

@@ -8,11 +8,8 @@ import { ListItem } from '../..';
 storiesOf('atoms/ListItem', module)
   .add('default', () => (
     <ListItem
-      alignItems={select('alignItems', ['flex-start','center'] ,'center')}
+      alignItems={select('alignItems', ['flex-start', 'center'], 'center')}
       button={boolean('button', false)}
-      className={text('className', undefined)}
-      ContainerComponent={text('ContainerComponent', 'li')}
-      ContainerProps={text('ContainerProps', undefined)}
       dense={boolean('dense', false)}
       disabled={boolean('disabled', false)}
       disableGutters={boolean('disableGutters', false)}
@@ -27,4 +24,4 @@ storiesOf('atoms/ListItem', module)
     info: {
 
     },
-  })
+  });

@@ -8,7 +8,7 @@ import { ListItemIcon } from '../..';
 storiesOf('atoms/ListItemIcon', module)
   .add('default', () => (
     <ListItemIcon
-      className={text('className', undefined)}
+      
     >
       {text('children', 'Test')}
     </ListItemIcon>
@@ -17,4 +17,4 @@ storiesOf('atoms/ListItemIcon', module)
     info: {
 
     },
-  })
+  });

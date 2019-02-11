@@ -8,9 +8,9 @@ import { ClickAwayListener } from '../..';
 storiesOf('atoms/ClickAwayListener', module)
   .add('default', () => (
     <ClickAwayListener
-      mouseEvent={select('mouseEvent', ['onClick','onMouseDown','onMouseUp',false] ,'onMouseUp')}
+      mouseEvent={select('mouseEvent', ['onClick', 'onMouseDown', 'onMouseUp',false], 'onMouseUp')}
       onClickAway={text('onClickAway', undefined)}
-      touchEvent={select('touchEvent', ['onTouchStart','onTouchEnd',false] ,'onTouchEnd')}
+      touchEvent={select('touchEvent', ['onTouchStart', 'onTouchEnd',false], 'onTouchEnd')}
     >
       {text('children', 'Test')}
     </ClickAwayListener>
@@ -19,4 +19,4 @@ storiesOf('atoms/ClickAwayListener', module)
     info: {
 
     },
-  })
+  });

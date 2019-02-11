@@ -8,14 +8,8 @@ import { BottomNavigationAction } from '../..';
 storiesOf('atoms/BottomNavigationAction', module)
   .add('default', () => (
     <BottomNavigationAction
-      className={text('className', undefined)}
-      icon={text('icon', undefined)}
-      label={text('label', undefined)}
-      onChange={text('onChange', undefined)}
-      onClick={text('onClick', undefined)}
-      selected={boolean('selected', undefined)}
-      showLabel={boolean('showLabel', undefined)}
-      value={text('value', undefined)}
+      selected={boolean('selected', false)}
+      showLabel={boolean('showLabel', false)}
     >
       {text('children', 'Test')}
     </BottomNavigationAction>
@@ -24,4 +18,4 @@ storiesOf('atoms/BottomNavigationAction', module)
     info: {
 
     },
-  })
+  });

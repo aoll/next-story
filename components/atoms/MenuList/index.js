@@ -13,36 +13,10 @@ const MenuList = (props) => {
 };
 
 MenuList.propTypes = {
-  
-    /**
-    * MenuList contents, normally `MenuItem`s.
-    */
-    children: PropTypes.node,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * If `true`, the menu items will not wrap focus.
-    */
-    disableListWrap: PropTypes.bool,
-    
-  
-    /**
-    * @ignore
-    */
-    onBlur: PropTypes.func,
-    
-  
-    /**
-    * @ignore
-    */
-    onKeyDown: PropTypes.func,
-    
+  /**
+   * If `true`, the menu items will not wrap focus.
+   */
+  disableListWrap: PropTypes.bool,
 };
 
 MenuList.defaultProps = {

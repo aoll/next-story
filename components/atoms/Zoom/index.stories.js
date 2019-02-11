@@ -8,10 +8,7 @@ import { Zoom } from '../..';
 storiesOf('atoms/Zoom', module)
   .add('default', () => (
     <Zoom
-      in={boolean('in', undefined)}
-      onEnter={text('onEnter', undefined)}
-      onExit={text('onExit', undefined)}
-      style={text('style', undefined)}
+      in={boolean('in', false)}
       theme={text('theme', undefined)}
     >
       {text('children', 'Test')}
@@ -21,4 +18,4 @@ storiesOf('atoms/Zoom', module)
     info: {
 
     },
-  })
+  });

@@ -8,15 +8,12 @@ import { StepContent } from '../..';
 storiesOf('atoms/StepContent', module)
   .add('default', () => (
     <StepContent
-      active={boolean('active', undefined)}
-      alternativeLabel={boolean('alternativeLabel', undefined)}
-      className={text('className', undefined)}
-      completed={boolean('completed', undefined)}
-      last={boolean('last', undefined)}
-      optional={boolean('optional', undefined)}
-      orientation={select('orientation', ['horizontal','vertical'] ,undefined)}
-      transitionDuration={text('transitionDuration', 'auto')}
-      TransitionProps={text('TransitionProps', undefined)}
+      active={boolean('active', false)}
+      alternativeLabel={boolean('alternativeLabel', false)}
+      completed={boolean('completed', false)}
+      last={boolean('last', false)}
+      optional={boolean('optional', false)}
+      orientation={select('orientation', ['horizontal', 'vertical'], undefined)}
     >
       {text('children', 'Test')}
     </StepContent>
@@ -25,4 +22,4 @@ storiesOf('atoms/StepContent', module)
     info: {
 
     },
-  })
+  });

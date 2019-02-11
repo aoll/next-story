@@ -8,13 +8,12 @@ import { StepConnector } from '../..';
 storiesOf('atoms/StepConnector', module)
   .add('default', () => (
     <StepConnector
-      active={boolean('active', undefined)}
+      active={boolean('active', false)}
       alternativeLabel={boolean('alternativeLabel', false)}
-      className={text('className', undefined)}
-      completed={boolean('completed', undefined)}
-      disabled={boolean('disabled', undefined)}
+      completed={boolean('completed', false)}
+      disabled={boolean('disabled', false)}
       index={text('index', undefined)}
-      orientation={select('orientation', ['horizontal','vertical'] ,'horizontal')}
+      orientation={select('orientation', ['horizontal', 'vertical'], 'horizontal')}
     >
       {text('children', 'Test')}
     </StepConnector>
@@ -23,4 +22,4 @@ storiesOf('atoms/StepConnector', module)
     info: {
 
     },
-  })
+  });

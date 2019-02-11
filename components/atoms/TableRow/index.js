@@ -13,37 +13,14 @@ const TableRow = (props) => {
 };
 
 TableRow.propTypes = {
-  
-    /**
-    * Should be valid <tr> children such as `TableCell`.
-    */
-    children: PropTypes.node,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * The component used for the root node.
-  * Either a string to use a DOM element or a component.
-    */
-    component: PropTypes.element,
-    
-  
-    /**
-    * If `true`, the table row will shade on hover.
-    */
-    hover: PropTypes.bool,
-    
-  
-    /**
-    * If `true`, the table row will have the selected shading.
-    */
-    selected: PropTypes.bool,
-    
+  /**
+   * If `true`, the table row will shade on hover.
+   */
+  hover: PropTypes.bool,
+  /**
+   * If `true`, the table row will have the selected shading.
+   */
+  selected: PropTypes.bool,
 };
 
 TableRow.defaultProps = {

@@ -8,10 +8,9 @@ import { MenuItem } from '../..';
 storiesOf('atoms/MenuItem', module)
   .add('default', () => (
     <MenuItem
-      className={text('className', undefined)}
       disableGutters={boolean('disableGutters', false)}
       role={text('role', 'menuitem')}
-      selected={boolean('selected', undefined)}
+      selected={boolean('selected', false)}
     >
       {text('children', 'Test')}
     </MenuItem>
@@ -20,4 +19,4 @@ storiesOf('atoms/MenuItem', module)
     info: {
 
     },
-  })
+  });

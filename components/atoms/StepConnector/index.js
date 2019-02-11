@@ -13,49 +13,31 @@ const StepConnector = (props) => {
 };
 
 StepConnector.propTypes = {
-  
-    /**
-    * @ignore
-    */
-    active: PropTypes.bool,
-    
-  
-    /**
-    * @ignore
-  * Set internally by Step when it's supplied with the alternativeLabel property.
-    */
-    alternativeLabel: PropTypes.bool,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * @ignore
-    */
-    completed: PropTypes.bool,
-    
-  
-    /**
-    * @ignore
-    */
-    disabled: PropTypes.bool,
-    
-  
-    /**
-    * @ignore
-    */
-    index: PropTypes.number,
-    
-  
-    /**
-    * @ignore
-    */
-    orientation: PropTypes.oneOf(['horizontal','vertical']),
-    
+  /**
+   * @ignore
+   */
+  active: PropTypes.bool,
+  /**
+   * @ignore
+   * Set internally by Step when it's supplied with the alternativeLabel property.
+   */
+  alternativeLabel: PropTypes.bool,
+  /**
+   * @ignore
+   */
+  completed: PropTypes.bool,
+  /**
+   * @ignore
+   */
+  disabled: PropTypes.bool,
+  /**
+   * @ignore
+   */
+  index: PropTypes.number,
+  /**
+   * @ignore
+   */
+  orientation: PropTypes.oneOf(['horizontal', 'vertical']),
 };
 
 StepConnector.defaultProps = {

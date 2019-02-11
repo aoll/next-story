@@ -8,13 +8,11 @@ import { FormLabel } from '../..';
 storiesOf('atoms/FormLabel', module)
   .add('default', () => (
     <FormLabel
-      className={text('className', undefined)}
-      disabled={boolean('disabled', undefined)}
-      error={boolean('error', undefined)}
-      filled={boolean('filled', undefined)}
-      focused={boolean('focused', undefined)}
-      muiFormControl={text('muiFormControl', undefined)}
-      required={boolean('required', undefined)}
+      disabled={boolean('disabled', false)}
+      error={boolean('error', false)}
+      filled={boolean('filled', false)}
+      focused={boolean('focused', false)}
+      required={boolean('required', false)}
     >
       {text('children', 'Test')}
     </FormLabel>
@@ -23,4 +21,4 @@ storiesOf('atoms/FormLabel', module)
     info: {
 
     },
-  })
+  });

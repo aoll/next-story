@@ -13,18 +13,10 @@ const ListItemAvatar = (props) => {
 };
 
 ListItemAvatar.propTypes = {
-  
-    /**
-    * The content of the component – normally `Avatar`.
-    */
-    children: PropTypes.element.isRequired,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
+  /**
+   * The content of the component – normally `Avatar`.
+   */
+  children: PropTypes.element.isRequired,
 };
 
 ListItemAvatar.defaultProps = {

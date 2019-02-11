@@ -8,7 +8,6 @@ import { CardActions } from '../..';
 storiesOf('atoms/CardActions', module)
   .add('default', () => (
     <CardActions
-      className={text('className', undefined)}
       disableActionSpacing={boolean('disableActionSpacing', false)}
     >
       {text('children', 'Test')}
@@ -18,4 +17,4 @@ storiesOf('atoms/CardActions', module)
     info: {
 
     },
-  })
+  });

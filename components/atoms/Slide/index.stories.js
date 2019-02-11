@@ -8,13 +8,8 @@ import { Slide } from '../..';
 storiesOf('atoms/Slide', module)
   .add('default', () => (
     <Slide
-      direction={select('direction', ['left','right','up','down'] ,'down')}
-      in={boolean('in', undefined)}
-      onEnter={text('onEnter', undefined)}
-      onEntering={text('onEntering', undefined)}
-      onExit={text('onExit', undefined)}
-      onExited={text('onExited', undefined)}
-      style={text('style', undefined)}
+      direction={select('direction', ['left', 'right', 'up', 'down'], 'down')}
+      in={boolean('in', false)}
       theme={text('theme', undefined)}
     >
       {text('children', 'Test')}
@@ -24,4 +19,4 @@ storiesOf('atoms/Slide', module)
     info: {
 
     },
-  })
+  });

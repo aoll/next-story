@@ -8,7 +8,7 @@ import { ExpansionPanelDetails } from '../..';
 storiesOf('atoms/ExpansionPanelDetails', module)
   .add('default', () => (
     <ExpansionPanelDetails
-      className={text('className', undefined)}
+      
     >
       {text('children', 'Test')}
     </ExpansionPanelDetails>
@@ -17,4 +17,4 @@ storiesOf('atoms/ExpansionPanelDetails', module)
     info: {
 
     },
-  })
+  });

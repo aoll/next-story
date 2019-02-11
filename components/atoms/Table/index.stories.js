@@ -8,8 +8,7 @@ import { Table } from '../..';
 storiesOf('atoms/Table', module)
   .add('default', () => (
     <Table
-      className={text('className', undefined)}
-      padding={select('padding', ['default','checkbox','dense','none'] ,'default')}
+      padding={select('padding', ['default', 'checkbox', 'dense', 'none'], 'default')}
     >
       {text('children', 'Test')}
     </Table>
@@ -18,4 +17,4 @@ storiesOf('atoms/Table', module)
     info: {
 
     },
-  })
+  });

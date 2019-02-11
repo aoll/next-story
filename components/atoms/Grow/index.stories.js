@@ -8,12 +8,8 @@ import { Grow } from '../..';
 storiesOf('atoms/Grow', module)
   .add('default', () => (
     <Grow
-      in={boolean('in', undefined)}
-      onEnter={text('onEnter', undefined)}
-      onExit={text('onExit', undefined)}
-      style={text('style', undefined)}
+      in={boolean('in', false)}
       theme={text('theme', undefined)}
-      timeout={text('timeout', 'auto')}
     >
       {text('children', 'Test')}
     </Grow>
@@ -22,4 +18,4 @@ storiesOf('atoms/Grow', module)
     info: {
 
     },
-  })
+  });

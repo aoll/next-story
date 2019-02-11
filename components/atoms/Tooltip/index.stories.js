@@ -17,14 +17,10 @@ storiesOf('atoms/Tooltip', module)
       interactive={boolean('interactive', false)}
       leaveDelay={text('leaveDelay', 0)}
       leaveTouchDelay={text('leaveTouchDelay', 1500)}
-      onClose={text('onClose', undefined)}
-      onOpen={text('onOpen', undefined)}
-      open={boolean('open', undefined)}
-      placement={select('placement', ['bottom-end','bottom-start','bottom','left-end','left-start','left','right-end','right-start','right','top-end','top-start','top'] ,'bottom')}
-      PopperProps={text('PopperProps', undefined)}
+      open={boolean('open', false)}
+      placement={select('placement', ['bottom-end', 'bottom-start', 'bottom', 'left-end', 'left-start', 'left', 'right-end', 'right-start', 'right', 'top-end', 'top-start', 'top'], 'bottom')}
       theme={text('theme', undefined)}
       title={text('title', undefined)}
-      TransitionProps={text('TransitionProps', undefined)}
     >
       {text('children', 'Test')}
     </Tooltip>
@@ -33,4 +29,4 @@ storiesOf('atoms/Tooltip', module)
     info: {
 
     },
-  })
+  });

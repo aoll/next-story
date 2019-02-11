@@ -13,25 +13,15 @@ const DialogTitle = (props) => {
 };
 
 DialogTitle.propTypes = {
-  
-    /**
-    * The content of the component.
-    */
-    children: PropTypes.node.isRequired,
-    
-  
-    /**
-    * @ignore
-    */
-    className: PropTypes.string,
-    
-  
-    /**
-    * If `true`, the children won't be wrapped by a typography component.
-  * For instance, this can be useful to render an h4 instead of the default h2.
-    */
-    disableTypography: PropTypes.bool,
-    
+  /**
+   * The content of the component.
+   */
+  children: PropTypes.node.isRequired,
+  /**
+   * If `true`, the children won't be wrapped by a typography component.
+   * For instance, this can be useful to render an h4 instead of the default h2.
+   */
+  disableTypography: PropTypes.bool,
 };
 
 DialogTitle.defaultProps = {

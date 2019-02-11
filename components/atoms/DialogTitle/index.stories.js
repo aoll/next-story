@@ -8,7 +8,6 @@ import { DialogTitle } from '../..';
 storiesOf('atoms/DialogTitle', module)
   .add('default', () => (
     <DialogTitle
-      className={text('className', undefined)}
       disableTypography={boolean('disableTypography', false)}
     >
       {text('children', 'Test')}
@@ -18,4 +17,4 @@ storiesOf('atoms/DialogTitle', module)
     info: {
 
     },
-  })
+  });

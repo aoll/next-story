@@ -8,11 +8,8 @@ import { GridList } from '../..';
 storiesOf('atoms/GridList', module)
   .add('default', () => (
     <GridList
-      cellHeight={text('cellHeight', 180)}
-      className={text('className', undefined)}
       cols={text('cols', 2)}
       spacing={text('spacing', 4)}
-      style={text('style', undefined)}
     >
       {text('children', 'Test')}
     </GridList>
@@ -21,4 +18,4 @@ storiesOf('atoms/GridList', module)
     info: {
 
     },
-  })
+  });

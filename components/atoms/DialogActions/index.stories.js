@@ -8,7 +8,6 @@ import { DialogActions } from '../..';
 storiesOf('atoms/DialogActions', module)
   .add('default', () => (
     <DialogActions
-      className={text('className', undefined)}
       disableActionSpacing={boolean('disableActionSpacing', false)}
     >
       {text('children', 'Test')}
@@ -18,4 +17,4 @@ storiesOf('atoms/DialogActions', module)
     info: {
 
     },
-  })
+  });
