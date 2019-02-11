@@ -14,21 +14,20 @@ const Card = (props) => {
 
 Card.propTypes = {
   
-  /**
-  * @ignore
-  */
-  className: PropTypes.string,
+    /**
+    * @ignore
+    */
+    className: PropTypes.string,
+    
   
-  
-  /**
-  * If `true`, the card will use raised styling.
-  */
-  raised: PropTypes.bool,
-  
+    /**
+    * If `true`, the card will use raised styling.
+    */
+    raised: PropTypes.bool,
+    
 };
 
 Card.defaultProps = {
-  className: undefined,
   raised: false
 };
 
